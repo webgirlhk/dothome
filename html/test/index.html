@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+    * {margin: 0; padding: 0;}
+    ul,li{list-style: none;}
+
+	#contents { width: 650px; }
+	#contents .cont_top {position:relative; overflow: hidden;width: 650px; }
+	#contents .cont_top h2.tit {float:left; width: 19%; font-size: 16px;  margin-left: 10px;}
+	#contents .cont_top ul.list {float:left;  font-size: 13px;  }
+	#contents .cont_top li { display: inline;}
+	#contents .cont_top .btn  {position: absolute; right: 0; top: 0; width: 40px; height: 20px; ;}
+	
+
+	#contents .cont_bom { width: 650px; height: 123px;  }
+	#contents .cont_bom ul {overflow: hidden;}
+	#contents .cont_bom li {float:left; width: 25%; padding: 5px; box-sizing: border-box; text-align: center;}
+	#contents .cont_bom li img { width: 100%; }
+
+</style>
+<body>
+	<div id="contents">
+		<div class="cont_top">
+			<h2 class="tit">카카오TV</h2>
+			<ul class="list">
+				<li>카카오TV</li>
+				<li>TV하이라이트</li>
+				<li>치명적인 댕댕이 매력</li>
+				<li>스포츠 명장면</li>
+				<li>일하다 만난 커플</li>
+			</ul>
+			<div class="btn">
+				버튼
+			</div>
+		</div>
+		<div class="cont_bom">
+			<ul>
+				<li><img src="https://img2.daumcdn.net/thumb/S308x188/?fname=https://t1.daumcdn.net/daumtop_chanel/op/20181010021740997.jpg" alt=""><span>코딩</span></li>
+				<li><img src="https://img2.daumcdn.net/thumb/S308x188/?fname=https://t1.daumcdn.net/daumtop_chanel/op/20181010021740997.jpg" alt=""><span>코딩</span></li>
+				<li><img src="https://img2.daumcdn.net/thumb/S308x188/?fname=https://t1.daumcdn.net/daumtop_chanel/op/20181010021740997.jpg" alt=""><span>코딩</span></li>
+				<li><img src="https://img2.daumcdn.net/thumb/S308x188/?fname=https://t1.daumcdn.net/daumtop_chanel/op/20181010021740997.jpg" alt=""><span>코딩</span></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script>
+		//버튼을 클릭하면 글씨색을 빨간색으로 변경
+		$(".btn").click(function(){
+			$(".btn").css("color","red");
+		});
+
+		//버튼을 클릭하면 모든 글씨 색을 빨간색으로 변경
+		$(".btn").click(function(){
+			$("#contents").css("color","red");
+		});
+
+		//버튼을 클릭하면 이미지 삭제
+		$(".btn").click(function(){
+			$(".cont_bom > ul > li img").toggle();
+		});
+
+		//로고를 클릭하면 이미지가 보이게
+		$(".btn").click(function(){
+			$(".cont_top .tit").text("바보");
+		});
+
+		//이미지를 클릭하면 다른이미지로 변경
+		$(".cont_bom > ul > li img:eq(0)").click(function(){
+			$(".cont_bom > ul > li img:eq(0)").attr({"src":"https://img2.daumcdn.net/thumb/S308x188/?fname=http://t1.daumcdn.net/tvpot/thumb/sf6dboFFqqFDowjFFlUDUUM/thumb.png?ts=1539349702"});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="leejinhee">
+    <meta name="description" content="웹 퍼블리셔 포트폴리오 사이트입니다.">
+    <meta name="keywords" content="웹퍼블리셔,웹표준,웹접근성,포트폴리오">
+    <title>Portfolio</title>
+    <!-- css -->
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- web_font -->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!--[If IE 9]>
+		<script type="text/javascript">
+			alert("Please Upgrade Your BROWSER !");
+		</script>
+		<![endif]-->
+</head>
+
+<body>
+
+    <div class="progress" id="progress">
+        <span class="progress-bar"></span>
+        <span class="progress-text">0</span>
+    </div>
+    
+    
+    <!-- layer-menu -->
+    <nav class="layer-menu">
+        <ul class="menu">
+            <li><a href="#section1"><span>Home</span></a></li>
+            <li><a href="#section2"><span>WEBSTANDARD</span></a></li>
+            <li><a href="#section3"><span>HTML5</span></a></li>
+            <li><a href="#section4"><span>GABIA</span></a></li>
+            <li><a href="#section5"><span>SKILL</span></a></li>
+            <li><a href="#section6"><span>Experience / Contact me</span></a></li>
+            <li><a href="#section7"><span>Social</span></a></li>
+        </ul>
+    </nav>
+    <!-- //layer-menu -->
+    
+    
+
+    <section id="contents">
+        <div id="section1">
+            <div class="container">
+                <div class="sec1">
+                    <div class="text">
+                        <span class="t1">h</span>
+                        <span class="t2">y</span>
+                        <span class="t3">e</span>
+                        <span class="t4">k</span>
+                        <span class="t5">u</span>
+                        <span class="t6">n</span>
+                        <span class="t7">g</span>
+                    </div>
+                    <div class="text2">
+                        <p><span>I’M A WEB PUBLISHER</span> My name is Jeon Hye kyng.<br>This is my portfolio site. I can make various homepages<br> using HTML, CSS, javascripts, and JQuery.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- //section1 -->
+        
+        <div id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="sec2">
+                        <div class="Topic">WEB SITE CODING</div>
+                        <div class="desc">
+                            <h2>WEBSTANDARD</h2>
+                            <p>Sites that comply with Web standards that are compatible with Internet Explorer 7 and the latest versions. This is the most reliable site supported by corporate sites or older browsers. This site has passed the W3C test and has passed the guidelines of the web accessibility lab.</p>
+                        </div>
+                        <div class="desc-bottom">
+                            <ul>
+                                <li>ROLE<span>Designer</span></li>
+                                <li>NAME<span>Hye kyng</span></li>
+                                <li>YEAR<span>2018</span></li>
+                            </ul>
+                        </div>
+                        <div class="btn">VIEW CASE</div>
+                        <div class="img"><img src="assets/img/webstandard.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //section2 -->
+        
+        <div id="section3">
+            <div class="container">
+                <div class="row">
+                    <div class="sec3">
+                        sec3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //section3 -->
+        
+        <div id="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="sec4">
+                        sec4
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //section4 -->
+        
+        <div id="section5">
+            <div class="container">
+                <div class="row">
+                    <div class="sec5">
+                        sec5
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //section5 -->
+        
+        <div id="section6">
+            <div class="container">
+                <div class="row">
+                    <div class="sec6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //section6 -->
+    </section>
+    
+    
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ie-checker.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+         $(function(){
+            imagesProgress();	//이미지 로딩 
+             
+            //hambuger Menu
+            $(".icon-wrap").click(function() {
+                $(".icon").toggleClass("animation");
+                $("body").toggleClass("open");
+            });
+             
+         });
+
+       
+
+    </script>
+</body>
+
+</html>

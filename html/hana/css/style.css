@@ -1,0 +1,82 @@
+/* layout */
+#wrap {width: 100%;  }
+#header { background: #fff;  }
+#banner {width: 100%;  height: 470px; background: #77e1d8; }
+#contents {}   }
+#footer {  }
+
+/* container */
+.container { width: 1200px; margin: 0 auto; /*background: rgba(0,0,0,0.4);*/ }
+
+/* cont layout */
+#cont1 {width: 100%; height: 940px; background: #f5f6f8; }
+#cont2 {width: 100%; height: 555px; background: #efefef;  }
+
+/* footer layout */
+#footer_notice { width: 100%; height: 71px; background: #fff;}
+#footer_infor { width: 100%; height: 242px; background: #f7f8f9; }
+
+/* header */
+.header {overflow: hidden; font-family: "hanaB";  }
+.header li a {display: block;padding: 3px 15px 1px 15px; font-size: 13px; margin: 7px 0; }
+.header .list1{float:left; overflow: hidden; }
+.header .list1 li{ float:left; }
+.header .list1 li.green a {background: #00907f; color:#fff; margin: 7px 0; border-radius:3px;}
+.header .list1 li a { color:#333; }
+.header .list2{float: right;  overflow: hidden;}
+.header .list2 li{float:left;  }
+.header .list2 li.log a { border: 1px solid #ccc; border-radius:3px; padding: 3px 10px 1px 10px; }
+.header .list2 li a { color:#797979;  }
+
+/* banner */
+.banner {overflow: hidden; position: relative;}
+.banner h1.main_img img{ margin-top: 40px; }
+.banner .slide .info_box {overflow: hidden;  width: 600px; height: 370px;  float: right;  margin-top: -40px; }
+.banner .slide .info_box .info_top {width: 600px; height: 270px;  background: #fff; margin-top: 22px; }
+.banner .slide .info_box .info_top .txt {position: relative; padding-top: 45px; padding-left: 60px; }
+.banner .slide .info_box .info_top .txt h2 {font-size: 33px;  }
+.banner .slide .info_box .info_top .txt:before {content: ''; width: 30px; height: 2px; background: #00907f; position: absolute;left: 60px; top: 160px; }
+.banner .slide .info_box .info_top .txt p {  padding-top: 50px;}
+.banner .slide .info_box .info_top .txt p span {   color: #00907f;}
+
+.banner .slide .info_box .info_top .login_box {float: right;  margin-top: -167px; margin-right: 47px; }
+.banner .slide .info_box .info_top .login_box ul{  }
+.banner .slide .info_box .info_top .login_box li {width: 80px; height: 80px; color:#fff; text-align: center; }
+.banner .slide .info_box .info_top .login_box li:first-child{line-height: 113px; background: #db3360 url(../img/logo_box_top.png) center 18px no-repeat; margin-bottom: 5px;  }
+.banner .slide .info_box .info_top .login_box li:last-child{line-height: 70px; background: #000; }
+
+.banner .slide .info_box .info_btn {  width: 600px; height: 50px; background: #00907f; margin-top: 26px;}
+.banner .slide .info_box .info_btn ul{  overflow: hidden;}
+.banner .slide .info_box .info_btn li{ float:left; color:#fff; margin: 16px 27px;position: relative; }
+.banner .slide .info_box .info_btn li:after {content: ''; width: 1px; height: 22px; background:#fff; position: absolute;left: 131px; top: 0;}
+
+.banner .slide .play_btn {position:relative;position: absolute; left: 550px; top: 190px; width: 100px; height: 40px; background: #f4f4f4; border-radius: 55px; }
+.banner .slide .play_btn .prev {position: absolute; left: 13px; top: 6px; }
+.banner .slide .play_btn .stop {position: absolute; left: 41px; top: 6px; }
+.banner .slide .play_btn .next {position: absolute; left: 75px; top: 6px; }
+
+/* banner_nav */
+.nav {overflow: hidden;position: absolute; left: 243px; top: 483px;  width: 207vh; height: 100px; background: #fff;}
+.nav .nav_left { float:left; width: 70%;  }
+.nav .nav_left ul {overflow: hidden; padding:40px; }
+.nav .nav_left li { float: left; margin:0 26px; }
+.nav .nav_right { float:left; width: 30%;}
+.nav .nav_right ul { overflow: hidden; padding-top: 30px; }
+.nav .nav_right li { float:left; width: 25%; }
+.nav .nav_right li.service { padding: 10px 15px; border:1px solid #ccc; }
+.nav .nav_right li.all_menu{position: relative; background: #000; color:#fff; padding: 10px 15px;  border:1px solid #ccc;}
+.nav .nav_right li.all_menu:before { content:''; position: absolute; right: 15px; top: 14px; width: 15px; height: 1px; background: #fff; }
+
+.nav .nav_right li.all_menu:after { content:''; position: absolute; right: 15px; top: 21px; width: 15px; height: 1px; background: #fff; }
+.nav .nav_right li.all_menu em:after  { content:''; position: absolute; right: 15px; top: 28px; width: 15px; height: 1px; background: #fff; }
+
+/* cont1 */
+.cont1 { position: relative; }
+.cont1 .c1{ width: 100%; height: 285px; background: #eaebef; position: absolute; left: 0; top: 150px; }
+.cont1 .c1 .c1_left {float:left; width: 50%; height: 100%; background: #Fff;}
+.cont1 .c1 .c1_left .tit {  }
+.cont1 .c1 .c1_left ul.c1_left_top {  }
+.cont1 .c1 .c1_right {float:left;width: 50%; height: 100%; background: #999;}
+
+.cont1 .c2{ width: 100%; height: 564px; background: #999; position: absolute; left: 0; top: 450px; }
+

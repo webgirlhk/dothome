@@ -1,0 +1,12 @@
+/* layout */
+#wrap {}
+#header{background-color: #666; }
+#banner{}
+#footer {}
+
+
+/* container */
+.container {width: 1180px; height: inherit; /* background-color:rgba(0,0,0,0.5); */ margin:0 auto; }
+
+/* header */
+.header {}

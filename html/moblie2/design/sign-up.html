@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="goka">
+   <meta name="description" content="모바일 교육 사이트입니다.">
+   <meta name="keywords" content="goka,웹퍼블리셔,웹표준,웹접근성">  
+   <title>LOADING</title>
+   
+   <!-- style -->
+   <link rel="stylesheet" href="../design/assets/css/reset.css">
+   <link rel="stylesheet" href="../design/assets/css/style2.css">
+   
+   <!-- webfont -->
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+   
+   <!-- favicon -->
+   <link rel="shortcut icon" href="../assets/ico/icon_152.png">
+   <link rel="apple-touch-icon" href="../assets/ico/icon_152.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../assets/ico/icon_152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../assets/ico/icon_180.png">
+   <link rel="apple-touch-icon" sizes="167x167" href="../assets/ico/icon_167.png">
+</head>
+
+<body>
+   <!-- sk1-t -->
+   <section id="sign">
+      <div class="sign">     
+         <img src="assets/img/pony2.png">
+         <div class="play">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+            <circle fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" cx="100" cy="100" r="97"/>
+            <polygon fill="#FFFFFF" points="67,56.62 141.609,99.696 67,142.771 "/>
+            </svg>
+         </div>
+         <div class="s-bottom">
+            <div class="s-left"><a href="#">LOG IN</a></div>
+            <div class="s-right"><a href="#">SIGN UP</a></div>
+         </div>
+      </div>
+   </section>
+   <!-- //sk1-t -->
+
+  
+   
+
+   
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script>
+      $(".icon-wrap").click(function(){
+          $(".icon").toggleClass("animation");
+      });
+      var nav = $("#side-nav ul li");
+      var contents = $("#contents > div");
+
+
+      //버튼을 클릭하면 사이드바 left:0 으로 변경해주세요!
+         $(".tright").click(function(){
+         //$("#side-nav").css("left","0");
+         //$("#side-nav").addClass("open");
+         $("#side-nav").toggleClass("on");
+         //$("#side-nav").animate({ "left":"0" },200);
+         
+         if( $("#side-nav").hasClass("on") ){
+            $("#side-nav").animate({ "left":"0" },200);
+            //open 글씨를 close로 바꿔주세요
+         } else {
+            $("#side-nav").animate({ "left":"-300" },200);}
+});;
+   </script>   
+
+</body>
+</html>
+
+
+
+
